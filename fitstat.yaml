@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    srmuttineni:
+      email: mistimer.techie@gmail.com
+      name: SR Mistimer
+      password: '$2b$12$U8u3yazzrC39IzdhiHt3lOIosfNBBLUfEFmKR3or5if0xr/.12jKy'
+      
+cookie:
+  expiry_days: 0
+  key: random_signature_key
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - chandurohith83@gmail.com
