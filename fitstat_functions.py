@@ -99,8 +99,10 @@ def retrieve_money_available():
     return money_available
 
 def retrieve_stat_file():
-    data = pd.read_csv("data/fitstat_data.csv")
-    return data
+    url='https://drive.google.com/file/d/1BiUfisVnRsOHWKJrd7170H1GQJTMatrK/view?usp=share_link'
+    url='https://drive.google.com/uc?id=' + url.split('/')[-2]
+    df = pd.read_csv(url)
+    return(df)
 
 def retrieve_todays_steps():
     today_date = retrieve_todays_date()

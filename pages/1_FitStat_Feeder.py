@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from fitstat_functions import merge_or_update_feeder
+from fitstat_functions import merge_or_update_feeder, retrieve_stat_file
 
 st.set_page_config(
     page_title="FitStat Feeder",
@@ -15,9 +15,7 @@ else:
         st.write(" Please Login using Authentication Page to continue")
         st.stop()
 
-fitstat_path = "data/fitstat_data.csv"
-
-existing_df = pd.read_csv(fitstat_path)
+existing_df = retrieve_stat_file()
 
 st.title ("Fitstat Feeder")
 
