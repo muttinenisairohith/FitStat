@@ -26,14 +26,14 @@ def calculate_money_per_day(step_count):
     money_generated = 0
     if step_count != 0:
         if step_count >= 3000 and step_count < 5000 :
-            money_generated = 3
+            money_generated = 30
         elif step_count >= 5000 and step_count < 8000:
-            money_generated = 5
+            money_generated = 50
         elif step_count >= 8000 and step_count < 10000:
-            money_generated = 8
+            money_generated = 80
         elif step_count >= 10000:
-            n = (step_count - 10000) // 1000
-            money_generated = 10 + n
+            n = (step_count - 10000) // 100
+            money_generated = 100 + n
     return money_generated
 
 def calculate_calories_per_day(step_count):
